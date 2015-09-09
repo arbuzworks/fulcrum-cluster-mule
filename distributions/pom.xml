@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2015. Arbuz LLC.  All rights reserved.  http://arbuzworks.com/
+  ~ The software in this package is published under the terms of the CPAL v1.0
+  ~ license, a copy of which has been included with this distribution in the
+  ~ LICENSE.txt file.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.fulcrum.cluster</groupId>
+        <artifactId>mule</artifactId>
+        <version>0.2-SNAPSHOT</version>
+    </parent>
+    <artifactId>fulcrum-cluster-mule</artifactId>
+    <packaging>pom</packaging>
+    <name>Mule Cluster Distribution</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <descriptor>src/main/assembly/bin.xml</descriptor>
+                    <finalName>${project.artifactId}-${project.version}</finalName>
+                    <appendAssemblyId>false</appendAssemblyId>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.fulcrum.cluster</groupId>
+            <artifactId>fulcrum-cluster</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fulcrum.cluster</groupId>
+            <artifactId>mule-cluster-demo</artifactId>
+            <version>${project.version}</version>
+            <type>zip</type>
+        </dependency>
+    </dependencies>
+</project>
