@@ -8,9 +8,9 @@ Fulcrum is High Availability Clustering solution powered by leading Open Source 
 # Distribution
 The tar file contains the following directory structure:
 
-./apps                 - demo application
-./lib                  - cluster jar
-./README.txt           - this file
+./apps                 - demo application  
+./lib                  - cluster jar  
+./README.txt           - this file  
 
 # Installation
 Unpack the tar file into desired installation location. 
