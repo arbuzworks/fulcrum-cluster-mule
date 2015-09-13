@@ -2,8 +2,11 @@
 Fulcrum is High Availability Clustering solution powered by leading Open Source In-Memory Data Fabric Apache Ignite for Mule ESB Community Edition. It improves the availability, scalability and reliability of applications deployed into Mule ESB Community Edition version 3.5.0 and 3.6.0.
 
 # Build
-1. Run mvn package
-2. Distribution will be located at distributions/target/fulcrum-cluster-mule-x.x.x.tar
+Run the following command from the terminal:
+
+    mvn package
+
+Distribution will be located at distributions/target/fulcrum-cluster-mule-x.x.x.tar
 
 # Distribution
 The tar file contains the following directory structure:
