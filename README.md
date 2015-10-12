@@ -25,6 +25,8 @@ Unpack the tar file into desired installation location.
 4. Start mule servers.
 
 ## Demo Application
+A collection of phones calls goes through splitter and each number gets assigned to the plan. Aggregator returns a consolidated bill.
+
 1. Copy apps/mule-cluster-demo.zip to ${MULE_HOME}/apps folder on every node of Mule ESB.
 2. Modify the values of in.path and out.path properties in apps/mule-cluster-demo/mule-app.properties, if required.
 3. Copy test file into ${in.path} folder.
