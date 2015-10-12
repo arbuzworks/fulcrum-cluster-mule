@@ -19,8 +19,10 @@ The tar file contains the following directory structure:
 Unpack the tar file into desired installation location. 
 
 ## Cluster Jar
-1. Copy lib/fulcrum-cluster.jar to ${MULE_HOME}/lib/mule folder on every node of Mule ESB
-2. Start mule servers.
+1. Copy lib/fulcrum-cluster.jar to ${MULE_HOME}/lib/mule folder on every node of Mule ESB.
+2. Copy conf/fulcrum-cluster.properties to ${MULE_HOME}/conf folder on every node of Mule ESB.
+3. Make sure that the value of fulcrum.clusterNodeId property is unique on every node (e.g. 1, 2, 3).
+4. Start mule servers.
 
 ## Demo Application
 1. Copy apps/mule-cluster-demo.zip to ${MULE_HOME}/apps folder on every node of Mule ESB.
