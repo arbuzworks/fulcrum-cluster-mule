@@ -26,6 +26,7 @@ Unpack the tar file into desired installation location.
 
 ## Demo Application
 1. Copy apps/mule-cluster-demo.zip to ${MULE_HOME}/apps folder on every node of Mule ESB.
+2. Modify the values of in.path and out.path properties in apps/mule-cluster-demo/mule-app.properties, if required.
  
 # Feedback
 Tell us about any issues, suggestions or other comments you have.
