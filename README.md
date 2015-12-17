@@ -35,7 +35,7 @@ A collection of phones calls goes through splitter and each number gets assigned
  
 # Feedback
 Tell us about any issues, suggestions or other comments you have.
-You can post on - dev@arbuzworks.com
+You can post on - es@arbuzworks.com
 
 Enjoy!  
 Fulcrum Team
