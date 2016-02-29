@@ -8,32 +8,32 @@
     <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <organization>
-        <name>Fulcrum, Inc.</name>
-        <url>http://www.fulcrum.com</url>
+        <name>Arbuz LLC</name>
+        <url>http://www.arbuz.io</url>
     </organization>
     <name>Fulcrum Cluster for Mule ESB</name>
     <description>
         Enables Enterprise grade cluster on Mule ESB Community Edition.
     </description>
-    <url>http://www.fulcrum.org</url>
+    <url>http://www.arbuz.io</url>
     <inceptionYear>2015</inceptionYear>
     <licenses>
         <license>
             <name>CPAL v1.0</name>
-            <url>http://www.fulcrum.com/CPAL</url>
+            <url>http://www.arbuz.io/CPAL</url>
         </license>
     </licenses>
     <mailingLists>
         <mailingList>
             <name>developers</name>
-            <post>mule-cluster@fulcrum.com</post>
+            <post>es@arbuzworks.com</post>
         </mailingList>
     </mailingLists>
     <developers>
         <developer>
-            <id>andrey</id>
-            <name>Andrey</name>
-            <email>andrey@fulcrum.com</email>
+            <id>es</id>
+            <name>Evgeni</name>
+            <email>es@arbuzworks.com</email>
             <roles>
                 <role>Developer</role>
             </roles>
@@ -44,7 +44,7 @@
     </contributors>
     <issueManagement>
         <system>jira</system>
-        <url>http://www.fulcrum.org/jira/browse/MULE</url>
+        <url>http://arbuz.io/jira/browse/MULE</url>
     </issueManagement>
     <scm>
         <connection>scm:git:git://github.com/fulcrum/mule-fulcrum-cluster.git</connection>
