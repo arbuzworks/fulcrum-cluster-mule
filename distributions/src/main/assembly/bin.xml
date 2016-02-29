@@ -1,0 +1,47 @@
+<assembly>
+    <id>bin</id>
+    <formats>
+        <format>tar</format>
+    </formats>
+    <fileSets>
+        <fileSet>
+            <directory>${project.basedir}/src/main/resources</directory>
+            <outputDirectory>/</outputDirectory>
+            <includes>
+                <include>README.txt</include>
+            </includes>
+        </fileSet>
+        <fileSet>
+            <directory>../config/target/classes</directory>
+            <outputDirectory>conf</outputDirectory>
+        </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <unpack>false</unpack>
+            <outputDirectory>apps</outputDirectory>
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+            <includes>
+                <include>com.fulcrum.cluster:mule-cluster-demo</include>
+            </includes>
+        </dependencySet>
+        <dependencySet>
+            <unpack>false</unpack>
+            <outputDirectory>lib/mule</outputDirectory>
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputFileNameMapping>${artifact.artifactId}.${artifact.extension}</outputFileNameMapping>
+            <includes>
+                <include>com.fulcrum.cluster:fulcrum-cluster</include>
+            </includes>
+        </dependencySet>
+        <dependencySet>
+            <unpack>false</unpack>
+            <outputDirectory>lib/opt</outputDirectory>
+            <includes>
+                <include>org.apache.activemq:activemq-core</include>
+            </includes>
+        </dependencySet>
+    </dependencySets>
+</assembly>
+
